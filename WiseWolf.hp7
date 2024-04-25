@@ -1,0 +1,7 @@
+<sourin this is an example of Wise Wolf Language sourin>
+int counter = 1;
+while(counter<= 10)
+az
+    print(counter);
+    counter+=1;
+morteza
