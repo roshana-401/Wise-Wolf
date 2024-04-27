@@ -43,10 +43,10 @@ t_AND=r'&&'
 t_OR=r'\|\|'
 t_QUESTIONMARK=r'\?'
 t_NOT=r'!'
-t_ASSIGN=r'='
 t_EQUAL=r'=='
+t_ASSIGN=r'='
 t_NOT_EQUAL=r'!='
-t_GTE=r'=>'
+t_GTE=r'=\s*>'
 t_GT=r'>'
 t_NULL_TYPE=r'null'
 t_LOOP=r'while'
@@ -55,23 +55,24 @@ t_END=r'morteza'
 t_IF=r'if'
 t_ELSE=r'else'
 t_NRP=r'nrp'
+t_LTE=r'<\s*='
+t_LT= r'<'
 
 t_ignore  = ' \t'
 
 def t_COMMENT(t):
     #Sentences that start with <sourin and end with sourin> is comment
-    r'<sourin.*sourin>'
+    r'<sourin.*?sourin>'
     # This function doesn't do anything besides matching the comment pattern.
     return None
 
-def t_LTE(t):
-    r'<='
-    return t
+# def t_LTE(t):
+#     r'<='
+#     return t
 
-
-def t_LT(t):
-    r'<'
-    return t
+# def t_LT(t):
+#     r'<'
+#     return t
 
 
 def t_STRING(t):
