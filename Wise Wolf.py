@@ -57,6 +57,7 @@ t_ELSE=r'else'
 t_NRP=r'nrp'
 t_LTE=r'<\s*='
 t_LT= r'<'
+t_STRING=r'".*"'
 
 t_ignore  = ' \t'
 
@@ -65,20 +66,6 @@ def t_COMMENT(t):
     r'<sourin.*?sourin>'
     # This function doesn't do anything besides matching the comment pattern.
     return None
-
-# def t_LTE(t):
-#     r'<='
-#     return t
-
-# def t_LT(t):
-#     r'<'
-#     return t
-
-
-def t_STRING(t):
-    # If it is a string, it starts with (") and it can be anything between us and at the end it is (").
-    r'".*"'
-    return t
 
 def t_BOOLEAN(t):
     #boolean value is true or false
