@@ -63,7 +63,7 @@ t_ignore  = ' \t'
 
 def t_COMMENT(t):
     #Sentences that start with <sourin and end with sourin> is comment
-    r'<sourin.*?sourin>'
+    r'<sourin.*sourin>'
     # This function doesn't do anything besides matching the comment pattern.
     return None
 

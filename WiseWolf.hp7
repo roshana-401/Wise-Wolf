@@ -1,7 +1,20 @@
-<sourin this is an example of Wise Wolf Language sourin>
-int counter = 1;
-while(counter <= 10)
-az
-  print(counter);
-  counter+=1;
-morteza
+<sourin Welcome Roshana <sourin Here is a sample comment sourin> hope you enjoyed this sourin comment sourin>
+
+nrp nrpTest(int a, int b){
+	string message = "Here is your operation of numbers: ";
+	int op = a + b;
+	print(message + op);
+
+	int i = 0;
+
+	<sourin A little working with loops sourin>
+
+	while (i < op+1)
+	az
+		if (i == op)	
+			print("while loop ...");
+		i += 1;
+	morteza
+
+	matin 0;
+}
